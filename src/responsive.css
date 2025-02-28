@@ -1,0 +1,368 @@
+@media (max-width: 2560px) {
+  .card-bar {
+    height: 500px;
+  }
+
+  .about-description {
+    height: 450px;
+  }
+
+  .token-billion {
+    margin-top: 200px;
+  }
+
+  .roadmap-title {
+    margin-top: 158px;
+  }
+
+  .roadmap-subtitle {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 1980px) {
+  .card-bar {
+    height: 380px;
+  }
+
+  .about-description {
+    height: 450px;
+  }
+
+  .roadmap-title {
+    margin-top: 158px;
+  }
+
+  .roadmap-subtitle {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .card-bar {
+    height: 300px;
+  }
+
+  .about-description {
+    height: 510px;
+  }
+
+  .revolution {
+    height: 770px;
+  }
+
+  .questions {
+    height: 180px;
+  }
+
+  .game-item {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .token-billion {
+    margin-top: 200px;
+  }
+
+  .revolution {
+    height: 820px;
+  }
+
+  .questions {
+    height: 180px;
+  }
+
+  .roadmap-title {
+    margin-top: 200px;
+  }
+
+  .about-description {
+    height: 550px;
+  }
+
+  .games {
+    height: 800px;
+  }
+
+  .game-item {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-bar {
+    height: 170px;
+  }
+
+  .revolution {
+    height: 930px;
+  }
+
+  .welcome {
+    height: 800px;
+  }
+
+  .questions {
+    height: 250px;
+  }
+
+  .about-description {
+    height: 650px;
+  }
+
+  .tokenomics-title {
+    margin-top: 130px;
+  }
+
+  .token-billion {
+    margin-top: 160px;
+  }
+
+  .roadmap-title {
+    margin-top: 130px;
+  }
+
+  .roadmap-subtitle {
+    margin-top: 160px;
+  }
+
+  .games {
+    height: 1200px;
+  }
+
+  .ads {
+    width: 200px;
+    height: 200px;
+  }
+
+  .game-item {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-bar {
+    height: 550px;
+  }
+
+  .revolution {
+    height: 680px;
+  }
+
+  .clicker {
+    width: 250px;
+    height: 400px;
+  }
+
+  .welcome {
+    height: 730px;
+  }
+
+  .about-description {
+    height: 630px;
+  }
+
+  .tokenomics {
+    height: 330px;
+  }
+
+  .tokenomics-logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .tokenomics-title {
+    margin-top: 80px;
+  }
+
+  .tokenomics-subtitle {
+    margin-top: 110px;
+  }
+
+  .circular {
+    margin-top: -160px;
+  }
+
+  .roadmap {
+    height: 400px;
+  }
+
+  .roadmap-logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .roadmap-title {
+    margin-top: 100px;
+  }
+
+  .roadmap-subtitle {
+    margin-top: 120px;
+  }
+
+  .member {
+    width: 270px;
+  }
+
+  .footer-bar {
+    height: 120px;
+  }
+
+  .games {
+    height: 1080px;
+  }
+
+  .ads {
+    width: 110px;
+    height: 110px;
+  }
+
+  .ads-img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .game-item {
+    width: 150px;
+    height: 150px;
+  }
+
+  .game-slide {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .revolution {
+    height: 640px;
+  }
+
+  .clicker {
+    width: 250px;
+    height: 400px;
+  }
+
+  .welcome {
+    height: 730px;
+  }
+
+  .about-description {
+    height: 670px;
+  }
+
+  .tokenomics {
+    height: 320px;
+  }
+
+  .circular {
+    margin-top: -160px;
+  }
+
+  .roadmap {
+    height: 400px;
+  }
+
+  .member {
+    width: 270px;
+  }
+
+  .footer-bar {
+    height: 120px;
+  }
+
+  .games {
+    height: 1020px;
+  }
+
+  .game-slide {
+    width: 180px;
+    height: 180px;
+  }
+
+  .ads {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ads-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .game-item {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 320px) {
+  .revolution {
+    height: 750px;
+  }
+
+  .clicker {
+    width: 200px;
+    height: 400px;
+  }
+
+  .welcome {
+    height: 730px;
+  }
+
+  .about-description {
+    height: 820px;
+  }
+
+  .tokenomics {
+    height: 330px;
+  }
+
+  .circular {
+    margin-top: -150px;
+  }
+
+  .questions {
+    height: 350px;
+  }
+
+  .roadmap {
+    height: 400px;
+  }
+
+  .member {
+    width: 270px;
+  }
+
+  .footer-bar {
+    height: 120px;
+  }
+
+  .games {
+    height: 950px;
+  }
+
+  .game-slide {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ads {
+    width: 90px;
+    height: 90px;
+  }
+
+  .ads-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .game-item {
+    width: 120px;
+    height: 120px;
+  }
+}

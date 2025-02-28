@@ -1,0 +1,554 @@
+/* footer */
+
+/* Footer container styling */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  /* Dark background */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border: 1px solid rgba(68, 68, 68, 1);
+  /* footer */
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 26px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.background-image {
+  background-image: url("../public/bg.svg");
+  background-color: black;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ce89ca, #5885bf, #7258df, #75eea3);
+  background-clip: text !important;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+
+/* Button styling */
+.footer-button {
+  background: linear-gradient(90deg,
+      #ce89ca 0%,
+      #5885bf 33.33%,
+      #7258df 66.67%,
+      #75eea3 100%);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border: 1.02px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.5px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.footer-button:hover {
+  transform: scale(1.05);
+}
+
+.buttonmain {
+  background: linear-gradient(90deg,
+      #ce89ca 0%,
+      #5885bf 33.33%,
+      #7258df 66.67%,
+      #75eea3 100%);
+  clip-path: polygon(0% 1em,
+      1em 0%,
+      100% 0%,
+      100% calc(100% - 1em),
+      calc(100% - 1em) 100%,
+      0 100%);
+  color: #fff;
+  font-size: 0.875rem;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right,
+      #ce89ca,
+      #5885bf,
+      #7258df,
+      #75eea3) !important;
+}
+
+/* General Styling */
+.charlie-section {
+  display: flex;
+  flex-direction: column;
+  /* Default: Stack items vertically (mobile view) */
+  align-items: center;
+  padding: 20px;
+}
+
+.text-content {
+  text-align: center;
+  /* Center text for mobile */
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  /* Add spacing between text and image for mobile */
+}
+
+/* Desktop View (Image on the left, text on the right) */
+@media (min-width: 768px) {
+  .charlie-section {
+    flex-direction: row-reverse;
+    /* Reverse the order: image after text */
+    align-items: flex-start;
+  }
+
+  .image-content {
+    flex: 1;
+    /* Adjust image space */
+    margin-left: 20px;
+    /* Add space between image and text */
+    margin-top: 0;
+    /* Remove top margin for desktop */
+  }
+
+  .text-content {
+    flex: 2;
+    /* Allow more space for text */
+    text-align: left;
+    /* Align text to the left on desktop */
+  }
+}
+
+.faq-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  clip-path: polygon(0% 1em,
+      1em 0%,
+      100% 0%,
+      100% calc(100% - 1em),
+      calc(100% - 1em) 100%,
+      0 100%);
+}
+
+.faq-title {
+  font-size: 54px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  clip-path: polygon(0% 1em,
+      1em 0%,
+      100% 0%,
+      100% calc(100% - 1em),
+      calc(100% - 1em) 100%,
+      0 100%);
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  border: 1px solid rgba(68, 68, 68, 1)
+    /* footer */
+  ;
+}
+
+.faq-item:hover {
+  box-shadow: 0 px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.faq-toggle {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.faq-answer {
+  margin-top: 20px;
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.active .faq-question {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.active .faq-answer {
+  color: #ffffff;
+}
+
+/* Marquee container */
+.powered_by_logos {
+  margin-top: 1rem;
+}
+
+.rfm-marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 2600px;
+  height: 60px;
+  /* Adjust based on the height of your logos */
+}
+
+.rfm-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  /* Adjust time for speed */
+}
+
+.rfm-content {
+  display: flex;
+  width: fit-content;
+  /* Make sure it takes up the space of both sets of logos */
+}
+
+.rfm-child {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  /* Adjust spacing between logos and text */
+}
+
+/* Logos inside marquee */
+.feature_img {
+  height: 50px;
+  object-fit: contain;
+  display: inline-block;
+  margin-right: 10px;
+  /* Adjust spacing between logo and text */
+}
+
+/* Text beside logo */
+.logo-text {
+  font-size: 16px;
+  /* Adjust text size */
+  color: #333;
+  /* Text color */
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-50%);
+    /* Start off-screen to the left */
+  }
+
+  100% {
+    transform: translateX(0);
+    /* End fully visible */
+  }
+}
+
+#slider-container {
+  height: 404px;
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.slider span {
+  margin-right: 30px;
+}
+
+.slider img {
+  height: inherit;
+  vertical-align: inherit;
+  border: inherit;
+  width: auto;
+  height: auto;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.rfm-marquee {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 20s linear infinite;
+}
+
+.rfm-content {
+  display: flex;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Container for all members */
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-image: url("./assets/3.png");
+  /* Adjust path as necessary */
+}
+
+/* Individual member card */
+.member-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border: 1px solid rgba(68, 68, 68, 1)
+    /* footer */
+  ;
+  clip-path: polygon(0% 1em,
+      1em 0%,
+      100% 0%,
+      100% calc(100% - 1em),
+      calc(100% - 1em) 100%,
+      0 100%);
+}
+
+/* Member photo */
+.member-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Member name */
+.member-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #759fee;
+}
+
+/* Member role */
+.member-role {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--tw-gradient-from), #465142 var(--tw-gradient-via-position),
+    var(--tw-gradient-to);
+  margin-bottom: 10px;
+}
+
+/* Member bio */
+.member-bio {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .members-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .member-card {
+    max-width: 100%;
+  }
+}
+
+/* Container for the two sections */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background: #000;
+  /* Black background for the section */
+}
+
+/* Styling for each box */
+.info-box {
+  background: #1c1c1c;
+  /* Dark background for the boxes */
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  /* Strong shadow for depth */
+  padding: 20px;
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+  flex: 1;
+  color: #fff;
+  /* White text */
+  margin-bottom: 20px;
+  /* Add margin bottom for better spacing between boxes */
+  line-height: 1.6;
+  /* Adjust line height for better readability */
+  font-size: 25px;
+  clip-path: polygon(0% 1em,
+      1em 0%,
+      100% 0%,
+      100% calc(100% - 1em),
+      calc(100% - 1em) 100%,
+      0 100%);
+}
+
+/* Title styling */
+.info-box h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #f5f5f5;
+  /* Slightly lighter white for headings */
+  margin-top: 0;
+}
+
+/* Paragraph styling */
+.info-box p {
+  font-size: 1rem;
+  color: #ddd;
+  /* Lighter text for better readability */
+  line-height: 1.8;
+  /* Increase line height for better clarity */
+  margin-bottom: 15px;
+  /* Space between paragraphs */
+}
+
+/* List styling */
+.info-box ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.info-box ul li {
+  font-size: 0.95rem;
+  color: #ccc;
+  /* Muted white for list items */
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+  }
+
+  .info-box {
+    max-width: 100%;
+  }
+}
+
+.font-extrabold {
+  text-align: center;
+}
+
+#container rect {
+  fill: none !important;
+}
+
+#container {
+  box-shadow: none !important;
+}
+
+.slider-left div {
+  border: none !important;
+}
+
+.slider-left div i {
+  background: linear-gradient(to right, #ce89ca, #5885bf, #7258df, #75eea3);
+  background-clip: text !important;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}
+
+.slider-right div {
+  border: none !important;
+}
+
+.slider-right div i {
+  background: linear-gradient(to right, #ce89ca, #5885bf, #7258df, #75eea3);
+  background-clip: text !important;
+  -webkit-background-clip: text;
+  color: transparent !important;
+}

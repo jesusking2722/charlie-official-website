@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+.clippath {
+  clip-path: polygon(3% 0, 97% 0, 100% 3%, 100% 100%, 0 99%, 0 4%);
+}
+
+.clippathheader {
+  clip-path: polygon(9% 0, 97% 0, 100% 9%, 100% 100%, 0 99%, 0 4%);
+}
+
+.clip {
+  clip-path: polygon(
+    calc(0% + 20px) 0%,
+    100% 0%,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    0% 100%,
+    0% calc(0% + 20px)
+  );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Monday Vacation Sans Serif";
+  src: url("assets/fonts/otf/Monday\ Vacation\ Sans\ Serif.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a,
+button {
+  color: black;
+}
+
+section {
+  max-width: 1500px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.bg-gradient {
+  background: linear-gradient(130deg, #6142f7, #3f2d53);
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    margin: 2em auto;
+  }
+}
+
+.wallet-adapter-button {
+  background-color: transparent !important;
+  border: 1px solid black !important;
+  /* border-radius: 1em; */
+  /* font-family: "Alro"; */
+}
+
+.social-icons {
+  font-size: 25px;
+}
+
+.listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  /* lg screens */
+  .listing {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* md screens */
+  .listing {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* sm screens */
+  .listing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  /* xs screens */
+  .listing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.listing {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  gap: 50px;
+}
+
+.listing {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.listing img {
+  /* flex: 0 0 auto; */
+  width: 230px;
+  background-size: cover;
+  /* object-fit:  */
+  /* background-size: c; */
+  height: 150px;
+  /* margin-right: 10px; */
+  /* object-fit: cover; */
+}
+
+.timer-comp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-box {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.timer-comp .time-item {
+  min-width: max-content;
+  display: flex;
+  color: #ffffff;
+  padding: 0px 2px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer-comp .time-item ._vale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  height: 28px;
+  width: 28px;
+  padding: 2px;
+  border-radius: 4px;
+  background: transparent;
+
+  /* @include media("<=tablet") {
+    height: 18px;
+    width: 18px;
+  } */
+}
+
+.timer-comp .time-item ._tag {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 4px;
+
+  /* @include media("<=phoneH") {
+    font-size: 10px;
+    margin-left: 2px;
+  } */
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1c1c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(17, 17, 17);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(17, 17, 17);
+}
